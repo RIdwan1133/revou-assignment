@@ -1,0 +1,60 @@
+/* Header Style */
+header > h1 {
+  text-align: center;
+}
+
+/* Main Container Style */
+.main-container {
+  display: flex;
+}
+
+/* Display Style */
+.container-item {
+  border: 1px solid;
+  width: 100%;
+  padding: 24px;
+}
+
+.container-item > h2 {
+  text-align: center;
+}
+
+.container-result,
+.container-form {
+  text-align: center;
+  background-color: aliceblue;
+  padding: 8px 24px; /* Merapikan padding */
+  margin-top: 16px; /* Menambahkan jarak antara container */
+  border-radius: 8px; /* Menambahkan border radius */
+}
+
+.container-form > div {
+  padding: 8px;
+}
+
+.form-item {
+  height: 24px;
+  border: 1px solid #ccc; /* Menambahkan border */
+  border-radius: 8px;
+  padding: 4px; /* Merapikan padding */
+}
+
+button {
+  height: 32px;
+  width: 100%; /* Menyesuaikan lebar dengan parent */
+  margin-top: 8px; /* Menambahkan jarak atas */
+  background-color: lightgreen;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer; /* Mengubah cursor saat diarahkan */
+}
+
+#calculate-button {
+  background-color: teal; /* Mengganti warna tombol hitung */
+}
+
+/* Memberi warna pada tombol reset */
+button[type="reset"] {
+  background-color: indianred;
+}
