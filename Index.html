@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator BMI</title>
-    <link rel="stylesheet" href ="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-     <script src="js/script.js"></script>
+    <header>
+        <h1>Calculator BMI - Wans</h1>
+    </header>
+    <main>
+        <div class="main-container">
+            <!-- Form Display -->
+            <div class="container-item">
+                <h2>Form BMI</h2>
+                <section>
+                    <header>
+                        <h1>Title</h1>
+                    </header>
+                    <p>Berat Badan Ideal Adalah...</p>
+                </section>  
+
+                <section class="container-form">
+                    <div> 
+                        <label>Jenis Kelamin</label><br />
+                        <input type="radio" name="sex" id="sex-man">
+                        <label for="sex-man">Laki Laki</label>
+                        <input type="radio" name="sex" id="sex-woman">
+                        <label for="sex-woman">Perempuan</label>
+                    </div>
+                    <div>
+                        <label>Berat Badan (kg)</label><br />
+                        <input type="number" class="form-item">
+                    </div> 
+                    <div>
+                        <label>Usia (tahun)</label><br />
+                        <input type="number" class="form-item">
+                    </div>
+                    <div>
+                        <label>Tinggi badan (cm)</label><br />
+                        <input type="number" class="form-item">
+                    </div>
+                    <button type="button" id="calculate-button">Hitung BMI</button>
+                    <button type="reset">Reset</button>  
+                </section>
+            </div>
+            <!-- Result Display -->
+            <div class="container-item"> 
+                <h2>Result</h2>
+                <section class="container-result">
+                    <h4>Berat Badan Lebih</h4>
+                    <h1>24,7</h1>
+                    <h4>Anda Memiliki Berat Badan lebih</h4>
+                    <button type="button">Download Hasil BMI</button>
+                </section>
+            </div>
+        </div>  
+    </main>
+    <footer></footer> 
+    <script src="js/script.js"></script>
 </body>
 </html>
